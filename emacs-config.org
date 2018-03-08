@@ -382,4 +382,10 @@ Argument REPLACE String used to replace the matched strings in the buffer.
 #+begin_src emacs-lisp
 (setq indicate-empty-lines t)
 #+end_src
+* My own additions
+** amx
+;  For easier M-x usage
+;#+begin_src emacs-lisp
+;(amx-mode)
+;#+end_src
 
