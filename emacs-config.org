@@ -3,7 +3,8 @@
 * Introduction
   Inspired by [[http://sachachua.com/blog/2012/06/literate-programming-emacs-configuration-file/][Sacha Chua]], I have moved my Emacs configuration into an
   organized and descriptive [[http://orgmode.org][org-mode]] file. What you are reading now
-  is, in fact, my Emacs configuration file.
+  is, in fact, my Emacs configuration file. Actually it was @echosa's
+  file and I have shamelessly borrowed/stolen it.
 
   Well, sort of.
 
@@ -23,13 +24,14 @@
   documetation and narrative, like this introdution section.
 
   If you're wondering about performance, org-babel doesn't do this
-  parse every time I open Emacs. Instead, it sees that I'm trying to
-  load `emacs-config.org` and checks for the existence of
-  `emacs-config.el`. If it doesn't find that file, or finds an out of
-  date version, only then does it parse the .org file to create a new
-  .el file. This means there's a bit of a slow startup the first time
-  after the org-mode file is changes, but after that there's no
-  noticable change in performance (at least on my machine).
+  parse every time I (or @echosa) open Emacs. Instead, it sees that I 
+  (and @echosa) am/are trying to load `emacs-config.org` and checks 
+  for the existence of `emacs-config.el`. If it doesn't find that file, 
+  or finds an out of date version, only then does it parse the .org
+  file to create a new .el file. This means there's a bit of a slow 
+  startup the first time after the org-mode file is changes, but after
+  that there's no noticable change in performance (at least on my
+  machine).
   
   Anyway, what follows is my actual Emacs configuration, embedded into
   a descriptive narrative.

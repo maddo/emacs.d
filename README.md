@@ -60,6 +60,11 @@
 </li>
 </ul>
 </li>
+<li><a href="#sec-18">18. My own additions</a>
+<ul>
+<li><a href="#sec-18-1">18.1. amx</a></li>
+</ul>
+</li>
 </ul>
 </div>
 </div>
@@ -69,7 +74,8 @@
 
 Inspired by [Sacha Chua](http://sachachua.com/blog/2012/06/literate-programming-emacs-configuration-file/), I have moved my Emacs configuration into an
 organized and descriptive [org-mode](http://orgmode.org) file. What you are reading now
-is, in fact, my Emacs configuration file.
+is, in fact, my Emacs configuration file. Actually it was @echosa's
+file and I have shamelessly borrowed/stolen it.
 
 Well, sort of.
 
@@ -89,13 +95,14 @@ make up the actual configuration, while ignoring the extra
 documetation and narrative, like this introdution section.
 
 If you're wondering about performance, org-babel doesn't do this
-parse every time I open Emacs. Instead, it sees that I'm trying to
-load `emacs-config.org` and checks for the existence of
-`emacs-config.el`. If it doesn't find that file, or finds an out of
-date version, only then does it parse the .org file to create a new
-.el file. This means there's a bit of a slow startup the first time
-after the org-mode file is changes, but after that there's no
-noticable change in performance (at least on my machine).
+parse every time I (or @echosa) open Emacs. Instead, it sees that I 
+(and @echosa) am/are trying to load `emacs-config.org` and checks 
+for the existence of `emacs-config.el`. If it doesn't find that file, 
+or finds an out of date version, only then does it parse the .org
+file to create a new .el file. This means there's a bit of a slow 
+startup the first time after the org-mode file is changes, but after
+that there's no noticable change in performance (at least on my
+machine).
 
 Anyway, what follows is my actual Emacs configuration, embedded into
 a descriptive narrative.
@@ -463,3 +470,12 @@ It's unnecessary, really.
 ### Show empty lines<a id="sec-17-2-6" name="sec-17-2-6"></a>
 
     (setq indicate-empty-lines t)
+
+# My own additions<a id="sec-18" name="sec-18"></a>
+
+## amx<a id="sec-18-1" name="sec-18-1"></a>
+
+;  For easier M-x usage
+;#+begin<sub>src</sub> emacs-lisp
+;(amx-mode)
+;#+end<sub>src</sub>
