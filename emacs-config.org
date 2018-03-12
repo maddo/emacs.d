@@ -358,7 +358,7 @@
     :if window-system
     :ensure t
     :config
-    (load-theme 'melancholy t))
+    (load-theme 'tango-dark t))
 #+END_SRC
 * Backup and Auto Save
 #+BEGIN_SRC emacs-lisp

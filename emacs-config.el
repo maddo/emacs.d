@@ -197,7 +197,7 @@ Argument REPLACE String used to replace the matched strings in the buffer.
   :if window-system
   :ensure t
   :config
-  (load-theme 'melancholy t))
+  (load-theme 'tango-dark t))
 
 (setq auto-save-file-name-transforms '((".*" "~/.emacs.tmp/" nil)))
 (setq auto-save-list-file-prefix "~/.emacs.tmp/.saves-")
