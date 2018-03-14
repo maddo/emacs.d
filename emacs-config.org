@@ -354,11 +354,12 @@
 
 * Theme
 #+BEGIN_SRC emacs-lisp
-  (use-package melancholy-theme
-    :if window-system
-    :ensure t
-    :config
-    (load-theme 'tango-dark t))
+;  (use-package flatui-dark-theme
+;    :if window-system
+;    :ensure t
+;    :config
+    (load-theme 'tango-dark t)
+;)
 #+END_SRC
 * Backup and Auto Save
 #+BEGIN_SRC emacs-lisp
