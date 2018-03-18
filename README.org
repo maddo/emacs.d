@@ -371,7 +371,7 @@
   change the value of ~my-theme~ at the beginning of the ~(let)~, then
   execute (~C-x C-e~) the entire block.
 #+BEGIN_SRC emacs-lisp
-  (let ((my-theme "solarized-dark"))
+  (let ((my-theme "tango-dark"))
     (cond
      ((string= my-theme "solarized-dark")
       (use-package solarized-theme
