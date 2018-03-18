@@ -451,3 +451,7 @@ For easier M-x usage
 #+begin_src emacs-lisp
 (amx-mode)
 #+end_src
+*** server-start
+#+begin_src emacs-lisp
+(server-start)
+#+end_src
